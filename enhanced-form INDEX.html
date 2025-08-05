@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enhanced Form Example</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      padding: 20px;
+      max-width: 800px;
+      margin: auto;
+    }
+    header, main, footer {
+      margin-bottom: 20px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+    }
+    th, td {
+      border: 1px solid #ccc;
+      padding: 8px;
+    }
+    th {
+      background-color: #f4f4f4;
+    }
+    form {
+      background: #f9f9f9;
+      padding: 15px;
+      border-radius: 8px;
+    }
+    label {
+      display: block;
+      margin-top: 10px;
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 8px;
+      margin-top: 4px;
+      box-sizing: border-box;
+    }
+    fieldset {
+      border: 1px solid #ccc;
+      margin-top: 15px;
+      padding: 10px;
+    }
+    legend {
+      font-weight: bold;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Enhanced HTML5 Form</h1>
+    <p>This page demonstrates the use of semantic HTML, media, tables, and a form with validation.</p>
+  </header>
+
+  <main>
+    <section>
+      <h2>Popular Web Technologies</h2>
+      <ul>
+        <li>HTML5</li>
+        <li>CSS3</li>
+        <li>JavaScript</li>
+        <li>React</li>
+        <li>Node.js</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Comparison Table</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Technology</th>
+            <th>Use Case</th>
+            <th>Popularity</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>HTML5</td>
+            <td>Markup Language</td>
+            <td>High</td>
+          </tr>
+          <tr>
+            <td>CSS3</td>
+            <td>Styling</td>
+            <td>High</td>
+          </tr>
+          <tr>
+            <td>React</td>
+            <td>Frontend Framework</td>
+            <td>Very High</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>Multimedia</h2>
+      <h3>Image</h3>
+      <img src="https://images.pexels.com/photos/2004161/pexels-photo-2004161.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Codes on Tilt Shift Lens" width="500" height="350">
+    </section>
+
+    <section>
+      <h2>Contact Form</h2>
+      <form action="#" method="post" autocomplete="on">
+        <fieldset>
+          <legend>Personal Information</legend>
+
+          <label for="name">Full Name:</label>
+          <input type="text" id="name" name="name" placeholder="John Doe" required>
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" placeholder="example@example.com" required>
+
+          <label for="phone">Phone:</label>
+          <input type="tel" id="phone" name="phone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+
+          <label for="dob">Date of Birth:</label>
+          <input type="date" id="dob" name="dob" required>
+
+          <label for="readonly-field">Referral Code (readonly):</label>
+          <input type="text" id="readonly-field" name="readonly-field" value="REF12345" readonly>
+        </fieldset>
+
+        <fieldset>
+          <legend>Preferences</legend>
+
+          <label for="language">Favorite Programming Language:</label>
+          <select id="language" name="language" required>
+            <option value="">Select one...</option>
+            <option value="html">HTML</option>
+            <option value="css">CSS</option>
+            <option value="js">JavaScript</option>
+            <option value="python">Python</option>
+          </select>
+
+          <label>Subscription Type:</label>
+          <input type="radio" id="basic" name="subscription" value="basic" required>
+          <label for="basic">Basic</label>
+          <input type="radio" id="premium" name="subscription" value="premium">
+          <label for="premium">Premium</label>
+
+          <label>
+            <input type="checkbox" name="terms" required>
+            I agree to the terms and conditions
+          </label>
+
+          <label for="comments">Additional Comments:</label>
+          <textarea id="comments" name="comments" rows="4" placeholder="Write your message here..."></textarea>
+        </fieldset>
+
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Enhanced Form Example. All rights reserved.</p>
+  </footer>
+</body>
+</html>
+
